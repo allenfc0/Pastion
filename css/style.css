@@ -1,0 +1,26 @@
+body {
+	background-color: gray;
+}
+
+.canvas {
+	background-color: black;
+	margin: 5% 33.3% 0% 33.3%;
+	color: white;
+}
+#ftitle {
+	font-weight:bolder;
+	text-align:center;
+}
+
+#fdiv {
+	padding: 20%;
+}
+
+form label, form input {
+	align-items: center;
+	display: block;
+}
+
+.encryptionInput input[type="text"] {
+	margin-bottom: 20px;
+}

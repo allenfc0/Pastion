@@ -1,0 +1,37 @@
+<DOCTYPE html>
+<html>
+<head>
+	<title>UP Encryption</title>
+
+	<link rel="stylesheet" type="text/css" href="css/style.css"
+</head>
+
+<body>
+
+<div class="canvas">
+
+	<h1 id="ftitle">UPE</h1>
+
+	<div id="fdiv">
+		<form action="" method="get" class="encryptionInput">
+			<!--Raw String-->
+			<label for="passwordLabel">Password</label>
+			<input type="text" name="passwordLabel" id="rawInput" required>
+
+			<!--Master Key-->
+			<label for="masterKey">Master Key</label>
+			<input type="text" name="masterKey" id="keyInput" required>
+
+			<!--Process Button-->
+			<input type="submit" value="Encrypt" id="submitBtn">
+
+			<!--Result-->
+			<label >Status</label>
+			<input type="text" id="status" disabled>
+		</form>
+	</div>
+</div>
+
+</body>
+
+</html>
