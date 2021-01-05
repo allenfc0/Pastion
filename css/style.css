@@ -1,26 +1,78 @@
+﻿
+* {
+	
+}
+
 body {
-	background-color: gray;
+	background-color: antiquewhite;
+	box-sizing: border-box;
+	padding: 100px;
+	margin: 0;
+	border: 0px;
+	
 }
 
 .canvas {
-	background-color: black;
-	margin: 5% 33.3% 0% 33.3%;
-	color: white;
+	background-color: orange;
+	align-content: center;
+	color: black;
+	font-family: 'Century Schoolbook';
+	box-shadow: 15px 10px 30px .3rem black;
+	border-radius: 6px;
 }
+
 #ftitle {
-	font-weight:bolder;
-	text-align:center;
+	border-bottom: groove;
+	text-align: center;
+	padding-top: 5%;
+	font-weight: bolder;
+	font-size: 50px;
+
+}
+#ftitle img {
+	width: 70px;
+	height: 50px;
+}
+
+
+fieldset {
+	border: outset;
+	padding: 15px;
+	
 }
 
 #fdiv {
-	padding: 20%;
+	padding: 5px 20% 20% 20%;
 }
 
 form label, form input {
-	align-items: center;
 	display: block;
 }
 
 .encryptionInput input[type="text"] {
 	margin-bottom: 20px;
 }
+
+#submitBtn {
+	width: 100px;
+	height: 30px;
+	margin-bottom: 20px;
+	cursor: pointer;
+	background-color: pink;
+	border-radius: 20px;
+}
+
+/*#submitBtn:hover {
+	width: 110px;
+	height: 40px;
+}*/
+
+/*#submitBtn::after {
+	background-image: url("images/img1.png");
+}*/
+
+
+/*label::before {
+	content: "❤️";
+}*/
+

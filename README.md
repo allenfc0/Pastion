@@ -1,2 +1,0 @@
-# univPicEncryption
-Encryption

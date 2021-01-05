@@ -1,36 +1,53 @@
 <DOCTYPE html>
-<html>
+
+<!--
+	Author: Allen Farias Chavez
+	Date: 12/2/2020
+	Description: This Application will encrypt a password using random string of characters
+	-->
+
+<html lang="en">
 <head>
 	<title>UP Encryption</title>
+	<link rel="icon" href="images/key.png" />
+	<link rel="stylesheet" type="text/css" href="css/style.css" />
 
-	<link rel="stylesheet" type="text/css" href="css/style.css"
 </head>
 
 <body>
 
 <div class="canvas">
 
-	<h1 id="ftitle">UPE</h1>
+	<h1 id="ftitle">UPE <img src="images/lock.jpg" alt="lock" /></h1>
 
 	<div id="fdiv">
 		<form action="" method="get" class="encryptionInput">
-			<!--Raw String-->
-			<label for="passwordLabel">Password</label>
-			<input type="text" name="passwordLabel" id="rawInput" required>
+			<fieldset>
+				<!--Raw String-->
+				<label for="passwordLabel">Password</label>
+				<input type="text" name="passwordLabel" id="rawInput" required="required">
 
-			<!--Master Key-->
-			<label for="masterKey">Master Key</label>
-			<input type="text" name="masterKey" id="keyInput" required>
+				<!--Process Button-->
+				<button type="button" id="submitBtn" onclick="encryptBtn()">Encrypt</button>
 
-			<!--Process Button-->
-			<input type="submit" value="Encrypt" id="submitBtn">
+				<!--Status-->
+				<label >Status</label>
+				<input type="text" id="status" disabled>
 
-			<!--Result-->
-			<label >Status</label>
-			<input type="text" id="status" disabled>
+				<!--Master Key-->
+				<label for="masterKey">Master Key</label>
+				<input type="text" name="masterKey" id="keyInput" disabled>
+
+				<!--Hashed Password-->
+				<label for="hashedPassword">Hashed Password</label>
+				<input type="text" name="hashedPassword" id="hashedPass" disabled>
+
+			</fieldset>
 		</form>
 	</div>
 </div>
+
+	<script src="Program/main.js"></script>
 
 </body>
 
