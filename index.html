@@ -25,14 +25,17 @@
 			<fieldset>
 				<!--Raw String-->
 				<label for="passwordLabel">Password</label>
-				<input type="text" name="passwordLabel" id="rawInput" required="required">
+				<input type="text" name="passwordLabel" id="rawInput" required>
 
 				<!--Process Button-->
 				<button type="button" id="submitBtn" onclick="encryptBtn()">Encrypt</button>
 
 				<!--Status-->
 				<label >Status</label>
-				<input type="text" id="status" disabled>
+				<div id="progress">
+					<div id="bar">
+					</div>
+				</div>
 
 				<!--Master Key-->
 				<label for="masterKey">Master Key</label>
