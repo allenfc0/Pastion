@@ -1,6 +1,4 @@
 
-//import Hash from 'Hash';
-
 
 const picAnim = document.getElementById("picAnimate");
 const submit = document.getElementById("submitBtn");
@@ -13,9 +11,18 @@ function encryptBtn() {
     //Hash class Testing
     let enc = new Hash(pass);
 
-    console.log(enc.moveCharacter());
-    
+    const test = enc.moveCharacter();
 
+    console.log(test);
+    //const completed {
+    //    width: ''
+    //};
+    if (test != '') {
+        document.getElementById('bar').style.setProperty('width', '100%');
+    }
+    else {
+        document.getElementById('bar').style.setProperty('width', '1%');
+    }
     //----------------------------------------------
 
 
@@ -82,14 +89,14 @@ class Hash {
     //returns a letter
     moveUp(i, ran, obj) {
         let firstNum = parseInt(ran.charAt(i));
-        let secondNum = parseInt(ran.charAt(i + 1));
+        let secondNum = ran.charAt(i + 1) === NaN ? parseInt(ran.charAt(i + 1)) :( Math.floor(Math.random() * 10));
         let count = 0;
 
         console.log(`${firstNum} * ${secondNum} = ${firstNum * secondNum}`);
 
         for (let i = 0; i < firstNum * secondNum; i++) {
 
-            if (this.keys.obj[count] === undefined) {
+            if (this.keys.numbers[count] === undefined) {
                 count = 0;
                 console.log(`reset ${count}`);
             } else {
@@ -97,8 +104,8 @@ class Hash {
                 count += 1;
             }
         }
-        console.log(`Out of moveUP, final character is: ${this.keys.obj.charAt(count)}`);
-        return this.keys.obj.charAt(count);
+        console.log(`Out of moveUP, final character is: ${this.keys.upper.charAt(count)}`);
+        return this.keys.special.charAt(count);
     }
 }
 
